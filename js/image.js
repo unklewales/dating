@@ -1,5 +1,4 @@
 // JavaScript Document for the Image Preiew (Codebits Academy)
-
 window.onload = function() {
     var files = document.querySelectorAll("input[type=file]");
     files[0].addEventListener("change", function(e) {
