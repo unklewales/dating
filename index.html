@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating</title>
+    <style>
+ fieldset {
+    background-color: lightyellow;
+    border: 10px solid yellow;
+    margin-bottom:10px;
+    width: 720px;
+}
+
+label {
+    width: 180px;
+    display: inline-block;
+}
+
+.grade{
+    text-align: center;
+}
+
+form textarea{
+    width: 360px;
+    height: 50px;
+}
+
+label:hover { 
+font-size:50px; }
+
+input:hover {
+    font-size: 50px;
+}
+.okan{
+    background-color: brown;
+    color: white;
+    padding: 5px;
+}
+
+.eji{
+    background-color:indigo;
+    color: white;
+    padding: 5px;
+}
+.radchek{
+    width: auto;
+}
+.but{
+    margin: 40px 0px;
+    padding: 10px 20px;
+}
+
+.good{
+    vertical-align: top;
+}
+
+.ash{
+    color: grey;
+}
+</style>
+</head>
+<body>
+    <h1>Please Enter Your Details For Our Dating Website</h1>
+    
+  <form action="">
+    <fieldset>
+    <legend class="space"> Your Face</legend>
+       <label for="preview"> Your image:</label><input type="file" name="preview" id="preview" required><br>
+        <label for="preview">Image preview:</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your General Details</legend>
+        <label for="names"> Name :</label> <input type="text" name="names" id="names" placeholder="Your full name" ><br>
+        
+       <label for="">Gender:</label>   <input type="radio" name="Male" id="male" required><label for="male">Male</label> <input class="radchek"type="radio" name="Female" id="female" required><label for="female">Female</label><br>
+    <label for="Age">Age:</label>  <input class="radchek" type="number" name="Male" id="Age" placeholder="18" required><br>
+    
+
+       <label for="dateofbirth">Date of birth: </label> 
+        <input type="number" id="dateofbirth" placeholder="dd/mm/yyyy" name="dateofbirth"><br>
+<label for="favcolor">Favourite color: </label> 
+            <input type="color" name="black" id="favcolor"><br>
+    
+            <label for="country">Which country: </label>
+                <select name="countries" id="country"><option value="No selection">No selection</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Denmark">Denmark</option> 
+                </select>
+                
+    </fieldset>
+
+    <fieldset>
+        <legend>Your indicators</legend>
+        <label for="Height">Height:</label>
+            <span class="grade okan">Short</span>
+        <input type="range" min="0" max="100" name="Height" id="Height">
+        <span class="grade eji">Tall</span>
+        <div><label for="salary">Salary:</label>
+            <span class="okan">Poor</span>
+            <input type="range" min="0" max="100" name="salary" id="salary">
+            <span class="grade eji">Rich</span>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your Contact information</legend>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required><br>
+    <label for="tels">Mobile:</label>
+    <input type="tel" name="tels" id="tels">
+    <br>
+    <label class="good" for="address">Address:</label>
+    <textarea name="" id="address"></textarea><br>
+<label for="last">Method to contact you:</label>
+<input class="radchek"type="checkbox" name="email" id="last">
+<label for="last">Email</label>
+<input class="radchek"type="checkbox" name="last" id="last">
+<label for="last">Whatsapp</label>
+<input class="radchek"type="checkbox" name="last" id="last">
+<label for="last">In-app chat</label>
+    </fieldset>
+
+    <button class="but" type="submit">Submit</button>
+  </form>
+        
+  <script src="image.js"></script>
+</body>
+</html>
